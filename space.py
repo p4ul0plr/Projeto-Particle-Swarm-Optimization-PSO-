@@ -21,9 +21,9 @@ class Space():
     def fitness(self, particle):
         x = particle.position[0]
         y = particle.position[1]
-        #return x**2 + y**2 + 1
+        return x**2 + y**2 + 1
         #Parabola
-        return (1 - x)**2 + 100*(y - x**2)**2 
+        #return (1 - x)**2 + 100*(y - x**2)**2 
         #Função de Rosenbrock = (1 - x)² + 100*(y - x²)². Minimo é f(1, 1)
 
     def set_pbest(self):
